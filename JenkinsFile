@@ -10,7 +10,7 @@ pipeline {
 
     stage('install playwright') {
       steps {
-        sh '''
+          bash '''
    
           npm install 
           npx playwright test tests/google.test.ts --project chromium 
