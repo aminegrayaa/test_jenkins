@@ -13,7 +13,7 @@ pipeline {
         sh '''
    
           npm install 
-          npx playwright test --project chromium --headed
+          npx playwright test tests/google.test.ts --project chromium 
         '''
       }
     }
